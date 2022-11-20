@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  aptsdb11:
+    build: ./aptsdb11
+
+  apts:
+    build: ./apts
+    volumes:
+      - ./apts:/app
+    ports:
+      - 5001:80
+    depends_on:
+      - aptsdb11
+
+  site:
+    build: ./site
+    volumes:
+      - ./site:/src
+    ports:
+      - 5011:80
+    depends_on:
+      - apts
+
