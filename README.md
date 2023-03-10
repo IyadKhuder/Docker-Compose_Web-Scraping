@@ -1,6 +1,7 @@
+# Web Scraping Project
+
 # srealityProject
-# srealityProject
-This  docker-compose project takes as input a csv file that contains the top 500 scraped ads published on sreality.cz, saves it in a Postgresql database, and publishes them in a front-end web page.
+This  docker-compose Web-Scraping project scrapes the top 500 scraped ads published on sreality.cz, saves them in CSV format, which is saved in a PostgreSQL database, and then gets published in a front-end webpage.
 
 This project is built as a docker-compose project, which contains the following containers:
 
